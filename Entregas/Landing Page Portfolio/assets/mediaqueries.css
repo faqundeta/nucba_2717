@@ -1,0 +1,147 @@
+@media (max-width:992px) {
+
+
+.navbar {
+    gap: 10px;
+}
+
+.navbar-list {
+    position: absolute;
+    top: 65px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    border: 2px solid var(--primary);
+    background: black;
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    align-items: flex-start;
+    padding: 45px 30px;
+    gap: 25px;
+    z-index: 2;
+    display: none;
+}
+
+.navbar-list a {
+    font-size: 18px;
+}
+
+.menu-label {
+    display: flex;
+    cursor: pointer;
+    order: 2;
+}
+
+.icono-buscador {
+    border: 0px solid;
+    height: 35px;
+}
+
+#menu-toggle:checked + .navbar-list {
+    display: flex;
+}
+
+.menu-label img {
+    height: 20px;
+    width: 20px;
+}
+
+/* hero */
+
+#hero {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+.hero-info {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-info h1 {
+    width: 90%;
+    max-width: 600px;
+    min-width: unset;
+}
+
+.hero-info p {
+    width: 60%;
+    max-width: 800px;
+}
+
+.hero-card {
+    width: 70%;
+}
+
+
+#discover {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+} 
+
+#discover h2 {
+    width: 90%;
+    align-self: center;
+}
+
+.discover-text {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    align-self: center;
+    gap: 20px;
+   
+}
+
+#profesores h2 {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+}
+
+.card-profesor {
+    flex-wrap: wrap;
+    /* gap: unset; */
+}
+
+.info-profesor {
+    width: 40%;
+}
+}
+
+
+
+
+@media (max-width: 576px) {
+    
+#hero {
+    margin-top: 20px;
+}
+
+.hero-info p {
+    width: 70%;
+    max-width: unset;
+}
+
+.hero-card {
+    width: 100%;
+}
+
+.card-profesor {
+    width: 80%;
+}
+
+.info-profesor {
+    width: 100%;
+}
+
+
+}

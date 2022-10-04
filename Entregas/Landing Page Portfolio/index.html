@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black & White Academy</title>
+    <title>Piano Academy</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
 </head>
 <body>
     <header>
         <img src=".//assets/img/pianoacademylogo-dark.png" alt="logo" class="logo">
         <nav class="navbar">
+            <label for="menu-toggle" class="menu-label">
+                <img src="./assets/img/menu.png" alt="menu">
+            </label>
+            <input type="checkbox" id="menu-toggle">
             <ul class="navbar-list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Clases</a></li>
@@ -18,8 +23,125 @@
                 <li><a href="#">Recursos</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
-            <img src="./assets/img/f9bb81e576c1a361c61a8c08945b2c48-icono-de-busqueda.png" alt="icono de buscador" class="icono_buscador">
+            <img src="./assets/img/buscador1.png" alt="icono de buscador" class="icono-buscador">
         </nav>
     </header>
+
+    <main>
+        <!-- hero -->
+        <section id="hero">
+            <div class="hero-info">
+                <h1>Domina el arte del Piano</h1>
+                <p>Con Piano Academy aprenderás todas las habilidades necesarias para convertirte en un increible pianista. Sumergete en el fascinante mundo de las 88 teclas y encontrarás un compañero para toda la vida. </p>
+                <a href="#">Únete</a>
+            </div>
+            
+            <div class="hero-card">
+                <img src="./assets/img/piano-flat-by-Vexels.svg"  alt="piano man">
+            </div>
+        </section>
+
+
+        <section id="info">
+
+            <div class="diferencia">
+                <h2>¿Que nos diferencia?</h2>
+
+                <p>En nuestra Academia brindamos un aprendizaje integral, desde la práctica hasta la teoría, porque creemos que una cabal comprensión de las obras y un entendimiento de las mismas mediante la inducción del analisis nos permitirá disfrutarlas aún más. Nos comprometemos como equipo a brindarte todos los elementos necesarios para, ya sea, disfrutar de la música como un pasatiempo, o hacer de ella un trabajo de tiempo completo. </p>
+            </div>
+        </section>
+        <section id="card-container"">
+                <div class="info-card clases">
+                     <img src="./assets/img/piano-vivo.jpeg" alt="alumna en clase de piano">
+                     <h3>Clases en vivo</h3>
+                     <p>Podrás tomar clases particulares on-line o mirar el extenso catálogo de clases grabadas sobre tópicos específicos.</p>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/img/partitura3.jpg" alt="lupa sobre partitura">
+                    <h3>Analisis</h3> 
+                    <p>Minuciosos analisis de diferentes obras que te harán entenderlas en profundidad, junto con la época en la que se gestaron.</p>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/img/recursos.jfif" alt="biblioteca">
+                    <h3>Recursos</h3>
+                    <p>Libros, resúmenes, apuntes, videos, y una amplia cantidad de recursos que enriquecerán tu aprendizaje.</p>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/img/marketing2.jfif" alt="altoparlante para publicitarse">
+                    <h3>Marketing</h3>
+                    <p>Creemos que es fundamental para los tiempos que corren el saber vender nuestro arte. Aprenderás estrategias para ello.</p>
+                </div>
+        </section>
+
+        <!-- <div class="quote"> "La vida sin música sería un error" <span>- Fredrich Nietzsche</span></div> -->
+
+        <section id="discover">
+                <span class="divider"></span>
+                <h2>Descubre una nueva forma de aprender</h2>
+                <div class="discover-text">
+                    <p>Este proyecto surgue como respuesta a las necesidades y baches que nosotros mismos hemos atravesado a lo largo de nuestra formación tradicional. Entendemos que los tiempos cambian y con ello también cambian los metodos de enseñanza, por eso te acercamos una formación integral, dinámica, y a tu propio ritmo. </p>
+                    <a href="#">Empezá ahora</a>
+                </div>
+                <span class="divider"></span>
+        </section>
+
+        <section id="profesores">
+            <h2>Nuestro staff de Profesores</h2>
+            <div class="card-profesor"> 
+                <div class="info-profesor">   
+                    <div class="info-img"><img src="./assets/img/profesor5.jpg" alt="profesor"></div>
+                   <div class="info-text">
+                    <h3>Martin Lutebas</h3>
+                    <p>Licenciado en Piano con honores por la Universidad de la Plata, es reconocido como uno de los pianistas más importantes de la actual escena argentina.</p>
+                    </div>
+                </div>
+
+                <div class="info-profesor">
+                    <div class="info-img"><img src="./assets/img/profesor2.jfif" alt="profesor"></div>
+                    <div class="info-text">
+                    <h3>Juan Diego Roco</h3>
+                    <p>Licenciado en Morfología y Repertorio Sinfónico por la Universidad de las Artes, cuenta con una basta trayectoria en el recorrido analitico-musical.</p>
+                    </div>
+                </div>
+
+                 <div class="info-profesor">
+                   <div class="info-img"> <img src="./assets/img/profesora6.jpg" alt="profesora"></div>
+                   <div class="info-text">
+                   <h3>Nadia Boulanger</h3>
+                    <p>Licenciada en Marketing y Media por la Universidad de Rosario, ha trabajado con las más importantes productoras de eventos audiovisuales y músicales del país.</p>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <section id="main-contact">
+            <div class="contacto">
+                <h2>Contáctanos</h2>
+                <form action="#" class="formulario">   
+                   <div class="casillas">
+                    <label for="nombre">Nombre y Apellido:</label>
+                    <input type="text" id="nombre" required placeholder="Juan Gonzalez">
+                 </div>
+                <div class="casillas">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" 
+                    placeholder="juan@gmail.com" required>  
+                </div>
+                <div class="casillas">
+                    <label for="textarea">Ingrese su consulta</label>
+                    <textarea name="" id="textarea" cols="50" rows="10" placeholder="Quería consultar por..."></textarea>
+                </div>
+                </form>
+            </div>
+            <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5587217134753!2d-58.38800578417518!3d-34.590030664282345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabae6632f11%3A0xf1d6f3f21265845e!2sAv.%20Alvear%201590%2C%20C1014AAP%20CABA!5e0!3m2!1ses-419!2sar!4v1664833495032!5m2!1ses-419!2sar" ></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        
+    </footer>
 </body>
 </html>
