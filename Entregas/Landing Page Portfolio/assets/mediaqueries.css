@@ -122,6 +122,10 @@
 
 @media (max-width: 576px) {
     
+main {
+    margin-top: 20px;
+}
+
 #hero {
     margin-top: 20px;
 }

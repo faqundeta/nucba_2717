@@ -374,7 +374,8 @@ main {
     border: solid 2px gray;
     padding: 20px;
     border-radius: 10px;
-    color: gray;
+    color: white;
+    background: rgba(1, 1, 1, 0.5);
 }
 
 .formulario {
